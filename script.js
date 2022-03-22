@@ -190,4 +190,24 @@ console.log(stringaInversa);
 
 let arrayStringa = ["a", "b", "c"];
 let arrayNumero = [1, 2, 3];
-    
+
+
+//creo una funzione che prenda alternativamente gli elementi dai due array
+
+function getalternatively( a, b ){
+
+    let arrayLength = Math.max(a.length, b.length);
+    let newArray = [];
+    for (let i = 0; i < arrayLength; i++){
+        if (a[i] !== null ){
+            newArray.push(a[i]);
+        }if (b[i] !== null){
+            newArray.push(b[i]);
+        }
+    }
+    console.log(newArray);
+    return newArray;
+} 
+
+//stampa gli elementi dei due array in maniera alternata
+getalternatively( arrayStringa, arrayNumero);
