@@ -1,5 +1,6 @@
 console.log('JS OK!');
 
+
 // Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine.
 
 
@@ -211,3 +212,32 @@ function getalternatively( a, b ){
 
 //stampa gli elementi dei due array in maniera alternata
 getalternatively( arrayStringa, arrayNumero);
+
+
+//Scrivi una funzione che accetti tre argomenti: un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array). La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
+
+
+function printArrayInRange( c, a, b){
+   
+    //creo array vuoto
+    let arrayTotale=[];
+    //debugger
+    //dichiaro le condizioni che servono per far partire il ciclo
+     if (a < b && b <= c.length){
+        debugger
+        for ( let i=a ; i <b; i++){
+            //pusho gli elementi nel mio array
+             arrayTotale.push(c[i]);
+             
+        }
+        }
+        
+        console.log(arrayTotale);
+        return arrayTotale;
+
+}
+
+//richiamo la funzione
+printArrayInRange([1,2,3,4,5,6,7,8,9,10], 2, 7);
+
+    
