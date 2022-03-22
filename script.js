@@ -170,3 +170,14 @@ for (let i = 0; i< zucchinaLunga.length; i++){
 console.log('La somma delle zucchine lunghe è: ', sommaPesoZucchinaLunga);
 
 //Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+
+function ReverseString(stringa){
+    let stringaInversa = stringa.split('').reverse().join('');
+    return stringaInversa;
+}
+
+//prova per vedere se il codice funziona
+let parola = 'ciao';
+
+stringaInversa = ReverseString(parola);
+console.log(stringaInversa);
