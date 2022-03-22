@@ -161,4 +161,12 @@ for (let i = 0; i< zucchinaCorta.length; i++){
 }
 console.log('La somma delle zucchine corte è: ', sommaPesoZucchinaCorta);
 
+//somma peso array zucchine lunghe
+let sommaPesoZucchinaLunga=0;
+for (let i = 0; i< zucchinaLunga.length; i++){
+
+    sommaPesoZucchinaLunga += zucchinaLunga[i].peso;
+}
+console.log('La somma delle zucchine lunghe è: ', sommaPesoZucchinaLunga);
+
 //Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
