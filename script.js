@@ -181,3 +181,13 @@ let parola = 'ciao';
 
 stringaInversa = ReverseString(parola);
 console.log(stringaInversa);
+
+
+//Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro, es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+
+//creo due array con stesso numero di elementi
+
+let arrayStringa = ["a", "b", "c"];
+let arrayNumero = [1, 2, 3];
+    
