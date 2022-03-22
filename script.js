@@ -134,9 +134,21 @@ let zucchinaNew = [
 
 ];
 
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 
+let zucchinaPiccola=[];
+let zucchinaGrande=[];
 
-
+for (let i = 0 ; i < zucchinaNew.length; i++){
+    if(zucchinaNew[i].lunghezza < 15){
+        zucchinaPiccola.push(zucchinaNew[i]);
+    }else{
+        zucchinaGrande.push(zucchinaNew[i]);
+    }
+    
+}
+console.log(zucchinaPiccola);
+console.log(zucchinaGrande);
 
 
 //Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
