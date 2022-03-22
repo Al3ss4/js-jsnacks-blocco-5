@@ -136,19 +136,29 @@ let zucchinaNew = [
 
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 
-let zucchinaPiccola=[];
-let zucchinaGrande=[];
+let zucchinaCorta=[];
+let zucchinaLunga=[];
 
 for (let i = 0 ; i < zucchinaNew.length; i++){
     if(zucchinaNew[i].lunghezza < 15){
-        zucchinaPiccola.push(zucchinaNew[i]);
+        zucchinaCorta.push(zucchinaNew[i]);
     }else{
-        zucchinaGrande.push(zucchinaNew[i]);
+        zucchinaLunga.push(zucchinaNew[i]);
     }
     
 }
-console.log(zucchinaPiccola);
-console.log(zucchinaGrande);
+console.log(zucchinaCorta);
+console.log(zucchinaLunga);
 
+
+//Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+//somma peso array zucchine corte
+let sommaPesoZucchinaCorta=0;
+for (let i = 0; i< zucchinaCorta.length; i++){
+
+    sommaPesoZucchinaCorta += zucchinaCorta[i].peso;
+}
+console.log('La somma delle zucchine corte è: ', sommaPesoZucchinaCorta);
 
 //Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
