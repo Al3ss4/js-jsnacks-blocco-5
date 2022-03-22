@@ -63,6 +63,15 @@ let zucchina = [
 console.log(zucchina);
 
 
+// creo un for per andare a ciclare l'array e prendermi il peso per poi fare la somma
+    let sum=0;
+    for( i = 0; i< zucchina.length; i++){
+        sum += zucchina[i].peso;
+    }
+    console.log(sum);
+
+
+
 
 
 //Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno o più di 15cm. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
