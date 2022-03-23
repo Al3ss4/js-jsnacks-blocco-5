@@ -224,7 +224,7 @@ function printArrayInRange( c, a, b){
     //debugger
     //dichiaro le condizioni che servono per far partire il ciclo
      if (a < b && b <= c.length){
-        debugger
+        //debugger
         for ( let i=a ; i <b; i++){
             //pusho gli elementi nel mio array
              arrayTotale.push(c[i]);
