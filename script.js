@@ -207,7 +207,7 @@ function getalternatively( a, b ){
         if (a[i] !== null ){
             newArray.push(a[i]);
             // se b non è un valore nullo, allora lo pusha nel nuovo array
-        }if (b[i] !== null){
+        } else if (b[i] !== null){
             newArray.push(b[i]);
         }
     }
