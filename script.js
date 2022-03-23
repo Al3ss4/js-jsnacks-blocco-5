@@ -197,11 +197,16 @@ let arrayNumero = [1, 2, 3];
 
 function getalternatively( a, b ){
 
+    
     let arrayLength = Math.max(a.length, b.length);
+    //creo un array vuoto dove inserire gli elementi
     let newArray = [];
+    //creo un ciclo per la lunghezza massima di a e b
     for (let i = 0; i < arrayLength; i++){
+        // se a non è un valore nullo, allora lo pusha nel nuovo array
         if (a[i] !== null ){
             newArray.push(a[i]);
+            // se b non è un valore nullo, allora lo pusha nel nuovo array
         }if (b[i] !== null){
             newArray.push(b[i]);
         }
