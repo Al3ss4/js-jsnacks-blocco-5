@@ -203,13 +203,16 @@ function getalternatively( a, b ){
     let newArray = [];
     //creo un ciclo per la lunghezza massima di a e b
     for (let i = 0; i < arrayLength; i++){
+        /*
         // se a non è un valore nullo, allora lo pusha nel nuovo array
         if (a[i] !== null ){
             newArray.push(a[i]);
             // se b non è un valore nullo, allora lo pusha nel nuovo array
         } else if (b[i] !== null){
             newArray.push(b[i]);
-        }
+        }*/
+        // versione corta dopo correzione 
+        newArray.push(a[i], b[i]);
     }
     console.log(newArray);
     return newArray;
